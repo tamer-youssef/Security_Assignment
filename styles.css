@@ -12,18 +12,22 @@ body {
     height: 100%;
 }
 
-.padding120{
-    padding-top: 120px;
-}
+.padding120 { padding-top: 100px; }
 
 .bg {
-  background-image: url("assets/redbull.png");
-  height: 90%;
-
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 67%;
+    background-image: url("assets/redbull.png");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25%;
 }
+
+#login-icon {
+    margin: 10px;   
+    width: 32px;
+}
+
+/* LOGIN AND REGISTER PAGE */
 
 input {
     margin-top: 4px;
@@ -37,12 +41,10 @@ input[type=submit] {
     margin: 4px 2px;
 }
 
-.buynow {
-    background-color: white;
-    padding: 10px 20px;
-    margin-top: 85%;
-    border: none;
-    outline: none;
+input[type=submit]:hover {
+    background-color: #ffcc00;
+    padding: 0.3em 1em;
+    margin: 4px 2px;
 }
 
 .required:after {
@@ -50,6 +52,47 @@ input[type=submit] {
     color: #e00;
 }
 
-a {
-    color:white
+a { color:white }
+
+a:hover { color: #ffcc00;}
+
+/* STORE GRID */
+
+.downarrow {
+    width: 5%;
+    margin-top: 38em;
 }
+
+.grid-container {
+    margin-top: 120px;
+    display: grid;
+    grid-template-areas:
+    'rbb rb4b rb12b';
+    gap: 10px;
+    /* background-color: red; */
+    padding: 10px;
+}
+
+.grid-container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    padding: 0;
+    font-size: 30px;
+    margin: 0px;
+    text-align: center;
+}
+
+footer {
+    font-size: 12px;
+    color: gray;
+    padding: 100px 0px 15px 0px;
+}
+
+
+
+
+  
