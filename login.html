@@ -4,23 +4,30 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
   <title>login</title>
+
 </head>
 <body>
   <div>
-    <form action="congrats.html">
+    <form action="index.html" class="padding120">
+      
+      <!-- username input -->
+      <label for="username" class="required">username</label><br>
+      <input type="text" id="username" required><br><br>
+      
+      <!-- password input -->
+      <label for="password" class="required">password</label><br>
+      <input type="password" id="password" required><br><br>
 
-      <label for="username">username</label><br>
-      <input type="text"><br><br>
-      <label for="password">password</label><br>
-      <input type="text"><br><br>
-      <input type="submit" value="Login">
-
+      <!-- submit button -->
+      <input type="submit" value="login">
+      
     </form>
+
+    <p>don't have an account? <a href="register.html">register</a></p>
   </div>
 </body>
 </html>
-
 
 <!-- USE HASHLIB TO ENCRYPT PASSWORD -->

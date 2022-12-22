@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>register</title>
+
+</head>
+<body>
+  <div>
+    <form action="index.html" class="padding120">
+
+      <!-- first name input -->
+      <label for="fname" class="required">first name</label><br>
+      <input type="text" id="fname" required><br><br>
+
+      <!-- last name input -->
+      <label for="lname" class="required">last name</label><br>
+      <input type="text" id="lname" required><br><br>
+      
+      <!-- username input -->
+      <label for="username" class="required">username</label><br>
+      <input type="text" id="username" required><br><br>
+
+      <!-- email input -->
+      <label for="email" class="required">email</label><br>
+      <input type="email" id="email" required><br><br>
+      
+      <!-- password input -->
+      <label for="password" class="required">password</label><br>
+      <input type="password" id="password" required><br><br>
+
+      <!-- confirm password input -->
+      <label for="password" class="required">confirm password</label><br>
+      <input type="password" id="passwordconfirm" required><br><br>
+
+      <!-- submit button -->
+      <input type="submit" value="register">
+      
+    </form>
+
+    <p>already registered? <a href="login.html">login</a></p>
+
+
+    <script>const register = (ev)=>{
+      let users=[];
+      ev.preventDefault();
+  
+      let user = {
+          id: Date.now,
+          fname:      document.getElementById('fname').value,
+          lname:      document.getElementById('lname').value,
+          username:   document.getElementById('username').value,
+          email:      document.getElementById('email').value,
+          password:   document.getElementById('password').value,
+      }
+  
+      users.push(user)
+      document.forms[0].reset();
+  
+      localStorage.setItem("myUserList", JSON.stringify(users));
+  
+  
+  }</script>
+    
+  </div>
+</body>
+</html>
+
+<!-- USE HASHLIB TO ENCRYPT PASSWORD -->

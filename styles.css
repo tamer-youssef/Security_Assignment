@@ -1,0 +1,55 @@
+html {
+    background-color: black;
+    color: white;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    height: 100%;
+}
+
+.padding120{
+    padding-top: 120px;
+}
+
+.bg {
+  background-image: url("assets/redbull.png");
+  height: 90%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 67%;
+}
+
+input {
+    margin-top: 4px;
+    border: none;
+    outline: none;
+}
+
+input[type=submit] {
+    background-color: white;
+    padding: 0.3em 1em;
+    margin: 4px 2px;
+}
+
+.buynow {
+    background-color: white;
+    padding: 10px 20px;
+    margin-top: 85%;
+    border: none;
+    outline: none;
+}
+
+.required:after {
+    content:"*";
+    color: #e00;
+}
+
+a {
+    color:white
+}
