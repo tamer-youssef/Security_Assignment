@@ -35,16 +35,23 @@ input {
     outline: none;
 }
 
-input[type=submit] {
+input[type=submit], #submitButton {
     background-color: white;
     padding: 0.3em 1em;
     margin: 4px 2px;
 }
 
-input[type=submit]:hover {
+input[type=submit]:hover, #submitButton:hover {
     background-color: #ffcc00;
     padding: 0.3em 1em;
     margin: 4px 2px;
+}
+
+#captcha {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .required:after {
@@ -52,15 +59,16 @@ input[type=submit]:hover {
     color: #e00;
 }
 
+
 a { color:white }
 
 a:hover { color: #ffcc00;}
 
-/* STORE GRID */
+/* HOMEPAGE */
 
 .downarrow {
     width: 5%;
-    margin-top: 38em;
+    margin-top: 50em;
 }
 
 .grid-container {

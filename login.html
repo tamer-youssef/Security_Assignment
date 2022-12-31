@@ -4,32 +4,37 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script src="https://cdn.rawgit.com/h2non/jsHashes/master/hashes.js" defer></script>
+  <script src="js/login.js"></script>
   <link rel="stylesheet" href="styles.css">
   <title>login</title>
-
 </head>
 <body>
   <div>
-    <form action="index.html" class="padding120">
+    <form onsubmit="userLogin()" class="padding120">
       
-      <!-- username input -->
-      <label for="username" class="required">username</label><br>
-      <input type="text" id="username" required><br><br>
+      <!-- email input -->
+      <label for="email" class="required">email</label><br>
+      <input type="text" id="email" required><br><br>
       
       <!-- password input -->
       <label for="password" class="required">password</label><br>
       <input type="password" id="password" required><br><br>
 
+      <!-- Google reCAPTCHA & submit button-->
+      <!-- <div id="captcha">
+        <div 
+          class="g-recaptcha" 
+          data-sitekey="6LfzQ58jAAAAAG802ELfu8Uard8HmdmWh1_4kVI8">
+        </div>
+      </div> -->
+
       <!-- submit button -->
-      <input type="submit" value="login">
-      
+      <button id="submitButton">Login</button>
     </form>
 
-    <p>don't have an account? <a href="register.html">register</a></p>
+    <p>don't have an account? <a href="register.html">register</a><br><br><a href="index.html">back to homepage</a></p>
   </div>
-
-<footer>Tamer Youssef CU1901532</footer>
 </body>
 </html>
-
-<!-- USE HASHLIB TO ENCRYPT PASSWORD -->

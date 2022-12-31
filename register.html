@@ -4,25 +4,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.rawgit.com/h2non/jsHashes/master/hashes.js" defer></script>
+  <script src="js/register.js"></script>
   <link rel="stylesheet" href="styles.css">
   <title>register</title>
-
 </head>
 <body>
   <div>
-    <form action="index.html" class="padding120">
-
-      <!-- first name input -->
-      <label for="fname" class="required">first name</label><br>
-      <input type="text" id="fname" required><br><br>
-
-      <!-- last name input -->
-      <label for="lname" class="required">last name</label><br>
-      <input type="text" id="lname" required><br><br>
-      
-      <!-- username input -->
-      <label for="username" class="required">username</label><br>
-      <input type="text" id="username" required><br><br>
+    <form onsubmit="userRegister()" class="padding120">
 
       <!-- email input -->
       <label for="email" class="required">email</label><br>
@@ -30,20 +19,14 @@
       
       <!-- password input -->
       <label for="password" class="required">password</label><br>
-      <input type="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required><br><br>
+      <input type="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least 1 number and 1 uppercase and 1 lowercase letter, and at least 8 or more characters" required><br><br>
 
-      <!-- submit button -->
-      <input type="submit" value="register">
+      <!-- register button -->
+      <button id="submitButton">Register</button>
       
     </form>
 
-    <p>already registered? <a href="login.html">login</a></p>
-
-
-    <footer>Tamer Youssef CU1901532</footer>
-    
-  </div>
+    <p>already registered? <a href="login.html">login</a><br><br><a href="index.html">back to homepage</a></p>
+  </div>  
 </body>
 </html>
-
-<!-- USE HASHLIB TO ENCRYPT PASSWORD -->
